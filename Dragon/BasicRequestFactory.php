@@ -68,11 +68,10 @@ class BasicRequestFactory
      * @return Request
      */
     public function createRequest($server, $get, $post, $files, $session, $env,
-                                  $cookie)
+                                  $cookie, $headers=[])
     {
         $body       = $this->body;
         $form       = $post;
-        $headers    = [];
         $method     = isset($server[$this->method]) ? $server[$this->method] : '';
         $path       = isset($server[$this->path]) ? $server[$this->path] : '';
         $protocol   = isset($server[$this->protocol]) ? $server[$this->protocol]
