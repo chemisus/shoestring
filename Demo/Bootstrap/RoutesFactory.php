@@ -7,6 +7,11 @@ use Bootstrap\Route;
 use Demo\Controller;
 use Dragon\BasicRoute;
 
+/**
+ * 
+ * @author Terrence Howard <chemisus@gmail.com>
+ * @since Version 0.1
+ */
 class RoutesFactory implements \Bootstrap\RoutesFactory
 {
 

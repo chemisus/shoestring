@@ -18,19 +18,11 @@ function run(\Bootstrap\RequestFactory $requestFactory,
     $response->execute();
 }
 
-function bootstrap()
-{
-    require_once('Bootstrap/RegisterCommand.php');
-    require_once('Demo/Bootstrap/RegisterCommand.php');
-
-    $register = new \Demo\Bootstrap\RegisterCommand();
-
-    $register->execute();
-}
-
 function main()
 {
-    bootstrap();
+    require_once 'bootstrap.php';
+    
+    bootstrap(__DIR__);
 
     run(new \Demo\Bootstrap\RequestFactory(),
         new \Demo\Bootstrap\RoutesFactory(),
@@ -55,6 +47,6 @@ call_user_func(
             round($ended[1] * 10000000) - round($started[1] * 10000000)
         ];
 
-        echo array_sum($diff) . '&micro;s';
+        //echo array_sum($diff) . '&micro;s';
     }
 );
