@@ -2,7 +2,7 @@
 
 namespace Demo\Bootstrap;
 
-use Dragon\BasicRequestFactory;
+use Shoestring\BasicRequestFactory;
 
 /**
  * 

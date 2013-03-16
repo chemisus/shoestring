@@ -1,6 +1,6 @@
 <?php
 
-namespace Dragon;
+namespace Shoestring;
 
 use Bootstrap\Response;
 

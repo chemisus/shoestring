@@ -2,7 +2,7 @@
 
 namespace Demo;
 
-use Dragon\BasicResponse;
+use Shoestring\BasicResponse;
 
 /**
  * 
