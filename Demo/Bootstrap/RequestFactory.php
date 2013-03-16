@@ -4,6 +4,11 @@ namespace Demo\Bootstrap;
 
 use Dragon\BasicRequestFactory;
 
+/**
+ * 
+ * @author Terrence Howard <chemisus@gmail.com>
+ * @since Version 0.1
+ */
 class RequestFactory implements \Bootstrap\RequestFactory
 {
 

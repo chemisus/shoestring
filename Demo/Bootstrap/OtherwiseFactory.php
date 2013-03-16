@@ -7,6 +7,11 @@ use Bootstrap\Route;
 use Dragon\AlwaysRoute;
 use Demo\Controller;
 
+/**
+ * 
+ * @author Terrence Howard <chemisus@gmail.com>
+ * @since Version 0.1
+ */
 class OtherwiseFactory implements \Bootstrap\OtherwiseFactory
 {
 

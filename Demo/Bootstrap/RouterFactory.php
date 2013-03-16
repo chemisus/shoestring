@@ -5,6 +5,11 @@ namespace Demo\Bootstrap;
 use Bootstrap\Route;
 use Dragon\BasicRouter;
 
+/**
+ * 
+ * @author Terrence Howard <chemisus@gmail.com>
+ * @since Version 0.1
+ */
 class RouterFactory implements \Bootstrap\RouterFactory
 {
 

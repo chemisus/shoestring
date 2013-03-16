@@ -4,6 +4,11 @@ namespace Dragon;
 
 use Bootstrap\Request;
 
+/**
+ * 
+ * @author Terrence Howard <chemisus@gmail.com>
+ * @since Version 0.1
+ */
 class BasicRequestFactory
 {
 
@@ -11,17 +16,36 @@ class BasicRequestFactory
     const PATH     = 'PATH_INFO';
     const PROTOCOL = 'SERVER_PROTOCOL';
 
+    /**
+     *
+     * @var callable
+     */
     private $body;
+
+    /**
+     *
+     * @var string
+     */
     private $method;
+
+    /**
+     *
+     * @var string
+     */
     private $path;
+
+    /**
+     *
+     * @var string
+     */
     private $protocol;
 
     /**
      * 
+     * @param callable $body
      * @param string $method
      * @param string $path
      * @param string $protocol
-     * @param callable $body
      */
     public function __construct($body, $method = self::METHOD,
                                 $path = self::PATH, $protocol = self::PROTOCOL)
