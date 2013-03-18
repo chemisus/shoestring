@@ -12,6 +12,16 @@
 //ini_set('include_path', ini_get('include_path'));
 // put your code here
 
-require_once(dirname(__DIR__) . '/bootstrap.php');
+function bootstrap()
+{
+    $base = dirname(__DIR__);
 
-bootstrap(dirname(__DIR__));
+    require_once($base . '/Bootstrap/RegisterCommand.php');
+    require_once($base . '/Demo/Bootstrap/RegisterCommand.php');
+    
+    $register = new \Demo\Bootstrap\RegisterCommand($base);
+
+    $register->execute();
+}
+
+bootstrap();

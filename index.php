@@ -20,10 +20,15 @@ function run(\Bootstrap\RequestFactory $requestFactory,
 
 function main()
 {
-    require_once 'bootstrap.php';
-    
-    bootstrap(__DIR__);
+    $base = __DIR__;
 
+    require_once($base . '/Bootstrap/RegisterCommand.php');
+    require_once($base . '/Demo/Bootstrap/RegisterCommand.php');
+
+    $register = new \Demo\Bootstrap\RegisterCommand($base);
+    
+    $register->execute();
+    
     run(new \Demo\Bootstrap\RequestFactory(),
         new \Demo\Bootstrap\RoutesFactory(),
         new \Demo\Bootstrap\OtherwiseFactory(),
