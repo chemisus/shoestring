@@ -1,0 +1,5 @@
+shoestring
+==========
+
+PHP minimal framework.
+
