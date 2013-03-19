@@ -21,14 +21,14 @@ class AdvancedRoute implements Route
      */
     public function translate($value)
     {
-        return strtr($value, [
+        return '/'.strtr($value, [
             '/' => '\/',
             '.' => '\.',
             '[' => '(',
             ']' => ')?',
             '<' => '(?P<',
             '>' => '>.+?)',
-        ]);
+        ]).'/';
     }
 
     public function execute(\Bootstrap\Request $request)
